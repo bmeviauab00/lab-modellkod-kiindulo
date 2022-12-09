@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Equipment;
+﻿namespace Equipment;
 
 public static class Program
 {
