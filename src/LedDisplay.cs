@@ -1,6 +1,6 @@
 namespace Equipment;
 
-public class LedDisplay : DisplayBase
+public class LedDisplay : DisplayBase, IEquipment
 {
     private int responseTime;
 
@@ -10,5 +10,20 @@ public class LedDisplay : DisplayBase
         this.price = originalPrice;
         this.size = size;
         this.responseTime = responseTime;
+    }
+
+    public double GetPrice()
+    {
+        return this.price;
+    }
+
+    public int GetAge()
+    {
+        return DateTime.Today.Year - this.manufacturingYear;
+    }
+
+    public string GetDescription()
+    {
+        return "Led Display";
     }
 }
