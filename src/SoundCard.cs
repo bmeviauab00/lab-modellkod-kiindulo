@@ -1,30 +1,25 @@
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Equipment
+namespace Equipment;
+
+public class SoundCard
 {
-    public class SoundCard
+    int yearOfCreation;
+    int newPrice;
+
+    public SoundCard(int yearOfCreation, int newPrice)
     {
-        int yearOfCreation;
-        int newPrice;
+        this.yearOfCreation = yearOfCreation;
+        this.newPrice = newPrice;
+    }
 
-        public SoundCard( int yearOfCreation, int newPrice )
-        {
-            this.yearOfCreation = yearOfCreation;
-            this.newPrice = newPrice;
-        }
+    public double GetPrice()
+    {
+        return yearOfCreation < (DateTime.Today.Year - 4) ? 0 : newPrice - (DateTime.Today.Year - yearOfCreation) * 2000;
+    }
 
-
-        public double GetPrice()
-        {
-            return yearOfCreation < ( DateTime.Today.Year - 4 ) ? 0 : newPrice - ( DateTime.Today.Year - yearOfCreation) * 2000;
-        }
-
-        public int GetAge()
-        {
-            return DateTime.Today.Year - yearOfCreation;
-        }
-
+    public int GetAge()
+    {
+        return DateTime.Today.Year - yearOfCreation;
     }
 }
