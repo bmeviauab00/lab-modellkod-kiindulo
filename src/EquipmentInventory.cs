@@ -1,17 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
+namespace Equipment;
 
-namespace Equipment
+public class EquipmentInventory
 {
-    class EquipmentInventory
+    public void ListAll()
     {
-    
-        public void ListAll()
-        {
-            //Kiírja az eszközök életkorát és a jelenlegi értéküket!
-        }
+        // Kiírja az eszközök életkorát és a jelenlegi értéküket!
     }
-
-
 }

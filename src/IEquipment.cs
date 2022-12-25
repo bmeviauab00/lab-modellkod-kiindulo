@@ -1,12 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
+namespace Equipment;
 
-namespace Equipment
+public interface IEquipment
 {
-    public interface IEquipment
-    {
-        double GetPrice();
-        int GetAge();
-    }
+    double GetPrice();
+    int GetAge();
 }
