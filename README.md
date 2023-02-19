@@ -1,3 +1,1 @@
-# lab-modellkod-kiindulo
-
-A "4. Többszálú alkalmazások fejlesztése" labor kiinduló anyaga
+A "1. A modell és a kód kapcsolata" labor megoldása
