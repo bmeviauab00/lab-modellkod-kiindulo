@@ -2,8 +2,8 @@ namespace Equipment;
 
 public class SoundCard
 {
-    int yearOfCreation;
-    int newPrice;
+    private int yearOfCreation;
+    private int newPrice;
 
     public SoundCard(int yearOfCreation, int newPrice)
     {
